@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/blue_flowers"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view_date="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_date"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view_date:cardCornerRadius="4dp"
+            card_view_date:cardElevation="4dp">
+
+            <android.support.constraint.ConstraintLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/date_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/date"
+                    android:textSize="15sp" />
+
+                <TextView
+                    app:layout_constraintTop_toBottomOf="@id/date_txt"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/date_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:id="@+id/date_imgBtn"
+                    android:src="@drawable/calendar2"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/date" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view_category="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_category"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view_category:cardCornerRadius="4dp"
+            card_view_category:cardElevation="4dp">
+
+            <android.support.constraint.ConstraintLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/category_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/category"
+                    android:textSize="15sp" />
+
+                <TextView
+                    app:layout_constraintTop_toBottomOf="@id/category_txt"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:id="@+id/category_imgBtn"
+                    android:src="@drawable/category1"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/category" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view_sum="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_sum"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view_sum:cardCornerRadius="4dp"
+            card_view_sum:cardElevation="4dp">
+
+            <android.support.constraint.ConstraintLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/sum_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/sum_for_category"
+                    android:textSize="15sp" />
+
+                <EditText
+                    app:layout_constraintTop_toBottomOf="@id/sum_txt"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/sum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:inputType="numberDecimal"
+                    android:textSize="20sp" />
+
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view_currency="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_currency"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view_currency:cardCornerRadius="4dp"
+            card_view_currency:cardElevation="4dp">
+
+            <android.support.constraint.ConstraintLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/currency_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/currency"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/currency_txt"
+                    android:id="@+id/currencies_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"/>
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view_comment="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_comment"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view_comment:cardCornerRadius="4dp"
+            card_view_comment:cardElevation="4dp">
+            
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="80dp"
+                android:hint="@string/comment"
+                android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+        </android.support.v7.widget.CardView>
+
+        <ImageButton
+            android:contentDescription="@string/save"
+            android:scaleType="centerCrop"
+            android:layout_margin="8dp"
+            android:id="@+id/btn_save"
+            android:src="@drawable/save6"
+            android:layout_gravity="end"
+            android:layout_width="75dp"
+            android:layout_height="75dp" />
+
+    </LinearLayout>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#D3D3D3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView xmlns:card_view_income="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_income"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view_income:cardCornerRadius="4dp"
+        card_view_income:cardElevation="4dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content">
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/income"
+                android:textSize="20sp" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/income"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/income_today"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/today"
+                android:textSize="15sp" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/income"
+                app:layout_constraintLeft_toRightOf="@id/income_today"
+                android:id="@+id/income_sum_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="15sp" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/income_today"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/income_week"
+                android:paddingEnd="15dp"
+                android:paddingStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/week"
+                android:textSize="15sp" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/income_sum_today"
+                app:layout_constraintLeft_toRightOf="@id/income_week"
+                android:id="@+id/income_sum_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="15sp" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/income_week"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/income_month"
+                android:paddingEnd="20dp"
+                android:paddingStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingBottom="16dp"
+                android:text="@string/month"
+                android:textSize="15sp" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/income_sum_week"
+                app:layout_constraintLeft_toRightOf="@id/income_month"
+                android:id="@+id/income_sum_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="15sp" />
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/currency_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/rub"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/income_imgBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/income"
+                android:scaleType="centerCrop"
+                android:src="@drawable/income1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/currency_income"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view_outcome="http://schemas.android.com/apk/res-auto"
+        app:layout_constraintTop_toBottomOf="@id/card_view_income"
+        android:id="@+id/card_view_outcome"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view_outcome:cardCornerRadius="4dp"
+        card_view_outcome:cardElevation="4dp"
+        >
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content">
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/outcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/outcome"
+                android:textSize="20sp" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/outcome"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/outcome_today"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/today"
+                android:textSize="15sp" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/outcome"
+                app:layout_constraintLeft_toRightOf="@id/outcome_today"
+                android:id="@+id/outcome_sum_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="15sp" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/outcome_today"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/outcome_week"
+                android:paddingEnd="15dp"
+                android:paddingStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/week"
+                android:textSize="15sp" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/outcome_sum_today"
+                app:layout_constraintLeft_toRightOf="@id/outcome_week"
+                android:id="@+id/outcome_sum_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="15sp" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/outcome_week"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/outcome_month"
+                android:paddingEnd="20dp"
+                android:paddingStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingBottom="16dp"
+                android:text="@string/month"
+                android:textSize="15sp" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/outcome_sum_week"
+                app:layout_constraintLeft_toRightOf="@id/outcome_month"
+                android:id="@+id/outcome_sum_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="15sp" />
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/currency_outcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/rub"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/outcome_imgBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/income"
+                android:scaleType="centerCrop"
+                android:src="@drawable/outcome3"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/currency_outcome" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view_balance="http://schemas.android.com/apk/res-auto"
+        app:layout_constraintTop_toBottomOf="@id/card_view_outcome"
+        android:id="@+id/card_view_balance"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view_balance:cardCornerRadius="4dp"
+        card_view_balance:cardElevation="4dp"
+        >
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content">
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/balance"
+                android:textSize="20sp" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/balance"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/all_time_balance"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:layout_width="wrap_content"
+                android:paddingTop="8dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/all_time"
+                android:textSize="18sp" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/balance"
+                app:layout_constraintLeft_toRightOf="@id/all_time_balance"
+                android:id="@+id/all_time_balance_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingTop="8dp"
+                android:textSize="18sp" />
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/currency_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/rub"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/balance_imgBtn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="@string/income"
+                android:scaleType="centerCrop"
+                android:src="@drawable/balance1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/currency_balance"
+                />
+        </android.support.constraint.ConstraintLayout>>
+    </android.support.v7.widget.CardView>
+
+
+    <ImageButton
+        app:layout_constraintTop_toBottomOf="@id/card_view_balance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/allIncome_imgBtn"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/income"
+        android:contentDescription="@string/all_income"
+        />
+
+    <ImageButton
+        app:layout_constraintTop_toBottomOf="@id/card_view_balance"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="24dp"
+        android:id="@+id/allOutcome_imgBtn"
+        android:layout_marginTop="10dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/outcome"
+        android:contentDescription="@string/all_outcome"/>
+
+</android.support.constraint.ConstraintLayout>

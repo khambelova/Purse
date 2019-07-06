@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">DiplomaPurse</string>
+    <string name="income">Доходы</string>
+    <string name="outcome">Расходы</string>
+    <string name="balance">Баланс</string>
+    <string name="all_income">Все доходы</string>
+    <string name="all_outcome">Все расходы</string>
+    <string name="all_time">Все время</string>
+    <string name="today">Сегодня</string>
+    <string name="week">Неделя</string>
+    <string name="month">Месяц</string>
+    <string name="date">Дата</string>
+    <string name="category">Категория</string>
+    <string name="sum_for_category">Сумма</string>
+    <string name="currency">Валюта</string>
+    <string name="comment">Комментарий</string>
+    <string name="save">Сохранить</string>
+    <string name="left">Влево</string>
+    <string name="right">Вправо</string>
+    <string name="year">Год</string>
+    <string name="total">Всего</string>
+    <string name="january">Январь</string>
+    <string name="february">Февраль</string>
+    <string name="march">Март</string>
+    <string name="april">Апрель</string>
+    <string name="may">Май</string>
+    <string name="june">Июнь</string>
+    <string name="july">Июль</string>
+    <string name="august">Август</string>
+    <string name="september">Сентябрь</string>
+    <string name="october">Октябрь</string>
+    <string name="november">Ноябрь</string>
+    <string name="december">Декабрь</string>
+    <string name="edit">Редактировать</string>
+    <string name="delete">Удалить</string>
+    <string name="diagram">Диаграмма</string>
+    <string name="rub">RUB</string>
+    <string name="diagramDate">Дата</string>
+    <string name="choose_date">Выбрать дату</string>
+    <string name="outcome_for_period">Расходы за текущий период</string>
+    <string name="income_for_period">Доходы за текущий период</string>
+
+</resources>
